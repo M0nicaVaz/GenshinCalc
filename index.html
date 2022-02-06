@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primogems Calculator</title>
+    <link rel="stylesheet" href="app/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Oswald:wght@200;300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Primogems Calculator</h1>
+    </header>
+    <section>
+      <div class="container">
+        <span id="clickInfo">Click here for more info</span>
+        <p id="info">
+          - The amount of primogems will be displayed disregarding the number of primogems
+          obtained from any future event <br />
+          - If checked, battle pass will be considered at lvl 50.  <br />
+          - Starting date is today, including today's daily quest and
+          today's welkin moon (if any). <br />
+        </p>
+
+        <div id="wraper">
+          <br />
+          <label for="primogens">How many primogens do you have?</label><br />
+          <input
+            type="number"
+            min="0"
+            name="primogens"
+            id="primogens"
+            required
+          /><br />
+          <label for="date">Set target date:</label><br />
+          <input type="date" name="date" id="finalDate" required /><br />
+          <input type="checkbox" name="daily" id="daily" checked />
+          <label for="daily">Daily Quests</label><br />
+          <input type="checkbox" name="Welkin" id="Welkin" />
+          <label for="Welkin">Blessing of the Welkin Moon</label><br />
+          <input type="checkbox" name="battlepass" id="battlepass" />
+          <label for="battlepass">Gnostic Hymn Battle Pass</label><br />
+        </div>
+
+        <div id="result"></div>
+        <button type="submit" class="btn" id="submit">Calculate</button>
+        <button type="submit" class="btn" id="tryAgain">Calculate Again</button>
+      </div>
+    </section>
+    <footer>
+      <p>
+        This page was created by <a href="https://github.com/M0nicaVaz"
+          > Monica Vaz</a
+        >
+        for studying purposes only.
+      </p>
+    </footer>
+    <script src="app/js/script.js"></script>
+  </body>
+</html>

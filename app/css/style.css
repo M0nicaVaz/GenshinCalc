@@ -1,0 +1,135 @@
+body{
+    text-align: center;
+    color:#202020;
+    background: linear-gradient(145deg,#78439770,#55a6d991, #73bfa9be, #bbf2e0d5);
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header h1{
+    margin-top: 10vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    font-variant: small-caps;
+}
+.container{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5vh;
+    background: rgba(255, 255, 255, 0.055);
+    box-sizing: border-box;
+   box-shadow: 2px 2px 2px 1px #78439733; 
+}
+.container span{
+    font-size: 18px;
+    color: red;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#clickInfo{
+    color: #265DA6;
+}
+#clickInfo:hover{
+    color: #784397f3;
+}
+#info{
+    display: none;
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;  
+    font-weight: 200;
+    font-size: 16px;
+}
+input{   
+    margin-bottom: 4vh;
+    font-size: 16px;
+}
+#primogens{
+    border-radius: 10px;
+    text-align: center;
+    background-color: #DCF2BB;
+    padding: 5px;
+}
+#finalDate{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #DCF2BB;
+}
+#result{
+    font-size: 20px;
+    display: none;
+   font-weight: 600;
+   border-radius: 10px;
+   margin: auto;
+   width: 60%;
+   background-color:#ec7d7d4f;;
+   font-weight: 600;
+   padding: 5px;
+   margin-bottom: 10px;
+}
+.btn{
+    margin: auto;
+    border-radius: 5px;
+    border: solid 1px 1px;
+    background-color: #DCF2BB;
+    color: #202020;
+    padding: 10px;
+   cursor: pointer;
+}
+#tryAgain{
+    display: none;
+ 
+}
+.btn:hover{
+    color: #DCF2BB;
+    background-color: #265DA6;
+}
+footer{
+    font-size: 12px;
+    position: relative;
+}
+footer a{
+    text-decoration: none;
+    color: #265DA6;
+}
+footer a:hover{
+    color:#784397;
+
+}
+@media (max-width: 1280px){
+    html {
+        height: 100%;
+    }
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    header h1{
+        font-size: 24px;
+    }
+    .container{
+        width: 80%;
+    }
+    #primogens{
+        width:80%;
+    }
+    #result{
+        font-size: 18px;
+     display: none;
+      width: 80%;
+      font-weight: 600;
+      padding: 2px;
+      margin-bottom: 10px;
+    }
+    #finalDate{
+        width: 80%;
+    }
+}
