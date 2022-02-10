@@ -1,9 +1,9 @@
 body{
     text-align: center;
-    color:#202020;
-    background: linear-gradient(145deg,#78439770,#55a6d991, #73bfa9be, #bbf2e0d5);
-    height: 100%;
-    min-height: 100%;
+    /* background: linear-gradient(#55A6D9, #73BFAA, #DCF2BB); */
+    background: url('/assets/BG.jpg');
+    background-size: cover;
+    /* height: 100%; */
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,7 +23,7 @@ header h1{
     margin: auto;
     border-radius: 5px;
     padding: 5vh;
-    background: rgba(255, 255, 255, 0.055);
+    background: rgba(255, 255, 255, 0.466);
     box-sizing: border-box;
    box-shadow: 2px 2px 2px 1px #78439733; 
 }
@@ -93,14 +93,11 @@ input{
 footer{
     font-size: 12px;
     position: relative;
+    color: #DCF2BB;
 }
 footer a{
     text-decoration: none;
-    color: #265DA6;
-}
-footer a:hover{
-    color:#784397;
-
+    color: #DCF2BB;
 }
 @media (max-width: 1280px){
     html {
