@@ -8,21 +8,16 @@ let result = document.querySelector("#result");
 let wraper = document.querySelector("#wraper");
 let again = document.querySelector("#tryAgain");
 let showSpan = document.querySelector("#clickInfo");
-let showP = document.querySelector("#info");
-
-submitBtn.addEventListener("click", checkDate);
-showSpan.addEventListener("click", showInfo);
-again.addEventListener("click", undo);
 
 // change div display
-function showInfo() {
+showSpan.addEventListener("click", () => {
+  let showP = document.querySelector("#info");
   if (showP.style.display != "block") {
     showP.style.display = "block";
   } else {
     showP.style.display = "none";
   }
-}
-
+});
 // get today's date, target date and calculates difference between dates
 function getDays() {
   var today = new Date();
@@ -31,16 +26,6 @@ function getDays() {
   let daysDiff = timeDiff / (1000 * 3600 * 24) + 2;
   return daysDiff.toFixed(0);
 }
-
-// checks if date was filled in correctly, if so calls another function
-function checkDate() {
-    if (setDate.value == ""){
-        alert ("Please insert date!")
-    }else{
-        calcPrimogens();
-    }
-}
-
 // calculates amount of primogems according to input values
 function calcPrimogens(){
     if (primos.value == "") {
@@ -83,11 +68,18 @@ function calcPrimogens(){
       result.style.display = "block";
       again.style.display = "block";
 }
-
+// checks if date was filled in correctly, if so calls another function
+submitBtn.addEventListener("click", () => {
+  if (setDate.value == ""){
+    alert ("Please insert date!")
+}else{
+    calcPrimogens();
+}
+});
 // change display back to initial state
-function undo() {
+again.addEventListener("click", () => {
   result.style.display = "none";
   wraper.style.display = "block";
   submitBtn.style.display = "block";
   again.style.display = "none";
-}
+}); 
