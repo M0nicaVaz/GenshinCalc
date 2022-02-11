@@ -1,9 +1,7 @@
 body{
     text-align: center;
-    /* background: linear-gradient(#55A6D9, #73BFAA, #DCF2BB); */
-    background: url('/assets/BG.jpg');
+    background: url('/app/assets/BG.jpg');
     background-size: cover;
-    /* height: 100%; */
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
