@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background: url('./app/assets/BG.jpg');
+    background: url('/app/assets/BG.jpg');
     background-size: cover;
     margin: 0;
     background-repeat: no-repeat;
