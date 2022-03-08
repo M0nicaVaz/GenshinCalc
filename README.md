@@ -8,8 +8,7 @@
 - HTML
 - CSS
 
-**NOTE**
-
-<p> This project was created for study purposes only. I do not intend to profit from it. Please do not commercialize. </p>
+**NOTE:**
+This project was created for study purposes only!
 
 <a href="https://m0nicavaz.github.io/GenshinCalc/"> You may check it by clicking here! </a>
